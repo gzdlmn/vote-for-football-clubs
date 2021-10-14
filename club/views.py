@@ -16,10 +16,10 @@ def home_page(request):
     no10 = Club.objects.filter(club_name='10').count()
     form = ClubForm(request.POST or None)
     if form.is_valid():
-        club = form.save(commit=False)
+        club = form.save(commit=True)
         if club.club_name == '1':
-            club.save()
             return redirect("club:real-madrid")
+        return redirect("home")
     return render(request, "home.html", {"form": form, "no1": no1, "no2": no2, "no3": no3, "no4": no4, "no5": no5, "no6": no6,
                                          "no7": no7, "no8": no8, "no9": no9, "no10": no10})
 def real_madrid(request):
