@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
-from . models import Club
-from . forms import ClubForm
+from . models import Club,Club1player
+from . forms import ClubForm,Club1playerForm
 # Create your views here.
 
 def home_page(request):
@@ -16,6 +16,14 @@ def home_page(request):
     no10 = Club.objects.filter(club_name='10').count()
     form = ClubForm(request.POST or None)
     if form.is_valid():
-        club = form.save(commit=True)
+        club = form.save(commit=False)
+        if club.club_name == '1':
+            club.save()
+            return redirect("club:real-madrid")
     return render(request, "home.html", {"form": form, "no1": no1, "no2": no2, "no3": no3, "no4": no4, "no5": no5, "no6": no6,
                                          "no7": no7, "no8": no8, "no9": no9, "no10": no10})
+def real_madrid(request):
+    form = Club1playerForm(request.POST or None)
+    if form.is_valid():
+        club1player = form.save(commit=True)
+    return render(request, "real-madrid.html", {"form":form})
