@@ -1,101 +1,137 @@
 {% extends "base.html" %}
 {% block body %}
-    <header class="container-fluid">
+    <header class="container-fluid pt-5">
+        <h3 class="text-center text-muted">Vote for your favorite football player</h3>
         <div class="row">
             <div class="col-md-8 col-lg-6 mx-auto">
                 <form method="POST">
                     {% csrf_token %}
                     <div class="row">
                     <div class="row btn-group btn-group-toggle bolumler" data-toggle="buttons">
-                        <div class="col-6" style="background-color: rgba(231, 76, 60, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="1" autocomplete="on">Karim Benzema</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="1" autocomplete="on">
+                                <img src="/media/club1player1.png" alt="Karim Benzema" title="Karim Benzema" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(165, 105, 189, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="2" autocomplete="on">Eden Hazard</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="2" autocomplete="on">
+                                <img src="/media/club1player2.png" alt="Eden Hazard" title="Eden Hazard" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(93, 173, 226, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="3" autocomplete="on">Marcelo Vieira</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="3" autocomplete="on">
+                                <img src="/media/club1player3.png" alt="Marcelo Vieira" title="Marcelo Vieira" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(75, 192, 192, 0.2);">
-                            <label class="btn"><input type="radio" name="club1player" value="4" autocomplete="on">Gareth Bale</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="4" autocomplete="on">
+                                <img src="/media/club1player4.png" alt="Gareth Bale" title="Gareth Bale" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(244, 208, 63, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="5" autocomplete="on">Eduardo Camavinga</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="5" autocomplete="on">
+                                <img src="/media/club1player5.png" alt="Eduardo Camavinga" title="Eduardo Camavinga" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(255, 159, 64, 0.2);">
-                            <label class="btn"><input type="radio" name="club1player" value="6" autocomplete="on">Vini Jr.</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="6" autocomplete="on">
+                                <img src="/media/club1player6.png" alt="Vini Jr." title="Vini Jr." class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(30, 132, 73, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="7" autocomplete="on">Ferland Mendy</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="7" autocomplete="on">
+                                <img src="/media/club1player7.png" alt="Ferland Mendy" title="Ferland Mendy" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(204, 204, 255, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="8" autocomplete="on">Luka Modrić</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="8" autocomplete="on">
+                                <img src="/media/club1player8.png" alt="Luka Modrić" title="Luka Modrić" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(255, 105, 180, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="9" autocomplete="on">David Alaba</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="9" autocomplete="on">
+                                <img src="/media/club1player9.png" alt="David Alaba" title="David Alaba" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(128, 128, 128, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="10" autocomplete="on">Toni Kroos</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="10" autocomplete="on">
+                                <img src="/media/club1player10.png" alt="Toni Kroos" title="Toni Kroos" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(30, 132, 73, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="11" autocomplete="on">Thibaut Courtois</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="11" autocomplete="on">
+                                <img src="/media/club1player11.png" alt="Thibaut Courtois" title="Thibaut Courtois" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(204, 204, 255, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="12" autocomplete="on">Federico Valverde</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="12" autocomplete="on">
+                                <img src="/media/club1player12.png" alt="Federico Valverde" title="Federico Valverde" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(255, 105, 180, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="13" autocomplete="on">Rodrygo</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="13" autocomplete="on">
+                                <img src="/media/club1player13.png" alt="Rodrygo" title="Rodrygo" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(128, 128, 128, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="14" autocomplete="on">Isco</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="14" autocomplete="on">
+                                <img src="/media/club1player14.png" alt="Isco" title="Isco" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(30, 132, 73, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="15" autocomplete="on">Marco Asensio</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="15" autocomplete="on">
+                                <img src="/media/club1player15.png" alt="Marco Asensio" title="Marco Asensio" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(204, 204, 255, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="16" autocomplete="on">Casemiro</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="16" autocomplete="on">
+                                <img src="/media/club1player16.png" alt="Casemiro" title="Casemiro" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(255, 105, 180, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="17" autocomplete="on">Dani Carvajal</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="17" autocomplete="on">
+                                <img src="/media/club1player17.png" alt="Dani Carvajal" title="Dani Carvajal" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(128, 128, 128, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="18" autocomplete="on">Luka Jović</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="18" autocomplete="on">
+                                <img src="/media/club1player18.png" alt="Luka Jović" title="Luka Jović" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(30, 132, 73, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="19" autocomplete="on">Nacho</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="19" autocomplete="on">
+                                <img src="/media/club1player19.png" alt="Nacho" title="Nacho" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(204, 204, 255, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="20" autocomplete="on">Lucas Vázquez</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="20" autocomplete="on">
+                                <img src="/media/club1player20.png" alt="Lucas Vázquez" title="Lucas Vázquez" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(255, 105, 180, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="21" autocomplete="on">Éder Militão</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="21" autocomplete="on">
+                                <img src="/media/club1player21.png" alt="Éder Militão" title="Éder Militão" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(128, 128, 128, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="22" autocomplete="on">Dani Ceballos</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="22" autocomplete="on">
+                                <img src="/media/club1player22.png" alt="Dani Ceballos" title="Dani Ceballos" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(30, 132, 73, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="23" autocomplete="on">Mariano</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="23" autocomplete="on">
+                                <img src="/media/club1player23.png" alt="Mariano" title="Mariano" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(204, 204, 255, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="24" autocomplete="on">Miguel Gutiérrez</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="25" autocomplete="on">
+                                <img src="/media/club1player25.png" alt="Jesús Vallejo" title="Jesús Vallejo" class="img-fluid">
+                            </label>
                         </div>
-                        <div class="col-6" style="background-color: rgba(255, 105, 180, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="25" autocomplete="on">Jesús Vallejo</label>
-                        </div>
-                        <div class="col-6" style="background-color: rgba(128, 128, 128, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="26" autocomplete="on">Andriy Lunin</label>
-                        </div>
-                        <div class="col-6" style="background-color: rgba(255, 105, 180, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="27" autocomplete="on">Antonio Blanco</label>
-                        </div>
-                        <div class="col-6" style="background-color: rgba(128, 128, 128, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="28" autocomplete="on">Toni Fuidias Ribera</label>
-                        </div>
-                        <div class="col-6" style="background-color: rgba(255, 105, 180, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="29" autocomplete="on">Luis Federico López Andúgar</label>
-                        </div>
-                        <div class="col-6" style="background-color: rgba(128, 128, 128, 0.4);">
-                            <label class="btn"><input type="radio" name="club1player" value="30" autocomplete="on">Sergio Santos</label>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club1players" value="26" autocomplete="on">
+                                <img src="/media/club1player26.png" alt="Andriy Lunin" title="Andriy Lunin" class="img-fluid">
+                            </label>
                         </div>
                     </div>
                 </div>

@@ -25,5 +25,7 @@ def home_page(request):
 def real_madrid(request):
     form = Club1playerForm(request.POST or None)
     if form.is_valid():
-        club1player = form.save(commit=True)
+        club1player = form.save(commit=False)
+        club1player.save()
+        return redirect("home")
     return render(request, "real-madrid.html", {"form":form})
