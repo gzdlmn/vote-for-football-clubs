@@ -6,5 +6,6 @@ app_name='club'
 
 urlpatterns=[
     path('real-madrid/', views.real_madrid, name="real-madrid"),
+    path('barcelona/', views.barcelona, name="barcelona"),
 
 ]

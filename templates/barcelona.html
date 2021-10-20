@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% block body %}
+    <header class="container-fluid pt-5">
+        <h3 class="text-center text-muted">Vote for your favorite football player</h3>
+        <div class="row">
+            <div class="col-md-8 col-lg-6 mx-auto">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="row">
+                    <div class="row btn-group btn-group-toggle bolumler" data-toggle="buttons">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="1" autocomplete="on">
+                                <img src="/media/club2player1.webp" alt="Marc-André ter Stegen" title="Marc-André ter Stegen" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="2" autocomplete="on">
+                                <img src="/media/club2player2.webp" alt="Neto" title="Neto" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="3" autocomplete="on">
+                                <img src="/media/club2player3.webp" alt="Iñaki Peña" title="Iñaki Peña" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="4" autocomplete="on">
+                                <img src="/media/club2player4.webp" alt="Sergiño Dest" title="Sergiño Dest" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="5" autocomplete="on">
+                                <img src="/media/club2player5.webp" alt="Gerard Piqué" title="Gerard Piqué" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="6" autocomplete="on">
+                                <img src="/media/club2player6.webp" alt="Ronald Araujo" title="Ronald Araujo" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="7" autocomplete="on">
+                                <img src="/media/club2player7.webp" alt="Clément Lenglet" title="Clément Lenglet" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="8" autocomplete="on">
+                                <img src="/media/club2player8.webp" alt="Jordi Alba" title="Jordi Alba" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="9" autocomplete="on">
+                                <img src="/media/club2player9.webp" alt="Sergi Roberto" title="Sergi Roberto" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="10" autocomplete="on">
+                                <img src="/media/club2player10.webp" alt="Óscar Mingueza" title="Óscar Mingueza" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="11" autocomplete="on">
+                                <img src="/media/club2player12.webp" alt="Samuel Umtiti" title="Samuel Umtiti" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="12" autocomplete="on">
+                                <img src="/media/club2player12.webp" alt="Eric García" title="Eric García" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="13" autocomplete="on">
+                                <img src="/media/club2player13.webp" alt="Sergio Busquets" title="Sergio Busquets" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="14" autocomplete="on">
+                                <img src="/media/club2player14.webp" alt="Riqui Puig" title="Riqui Puig" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="15" autocomplete="on">
+                                <img src="/media/club2player15.webp" alt="Philippe Coutinho" title="Philippe Coutinho" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="16" autocomplete="on">
+                                <img src="/media/club2player16.webp" alt="Pedri" title="Pedri" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="17" autocomplete="on">
+                                <img src="/media/club2player17.webp" alt="Frenkie de Jong" title="Frenkie de Jong" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="18" autocomplete="on">
+                                <img src="/media/club2player18.webp" alt="Ousmane Dembélé" title="Ousmane Dembélé" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="19" autocomplete="on">
+                                <img src="/media/club2player19.webp" alt="Memphis Depay" title="Memphis Depay" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="20" autocomplete="on">
+                                <img src="/media/club2player20.webp" alt="Ansu Fati" title="Ansu Fati" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="21" autocomplete="on">
+                                <img src="/media/club2player21.webp" alt="Yusuf Demir" title="Yusuf Demir" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="22" autocomplete="on">
+                                <img src="/media/club2player22.webp" alt="Martin Braithwaite" title="Martin Braithwaite" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="23" autocomplete="on">
+                                <img src="/media/club2player23.webp" alt="Luuk de Jong" title="Luuk de Jong" class="img-fluid">
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <label class="btn btn-success"><input type="radio" name="club2players" value="24" autocomplete="on">
+                                <img src="/media/club2player24.webp" alt="Sergio Agüero" title="Sergio Agüero" class="img-fluid">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success d-block w-50 mx-auto my-3">Vote</button>
+                </form>
+            </div>
+        </div>
+    </header>
+{% endblock %}
